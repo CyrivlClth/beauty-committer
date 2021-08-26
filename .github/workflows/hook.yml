@@ -14,6 +14,6 @@ jobs:
         with:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
           strategy: regex
-          root: VERSION
+          root: "version.go"
           tag_prefix: "v"
-          regex_pattern: "(?<version>\\d+\\.\\d+\\.\\d+(.+)?)\\n?"
+          regex_pattern: "VersionTag\\s+=\\s+\"v(\\d+\\.\\d+\\.\\d+(.+)?)\\n?\""
