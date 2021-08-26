@@ -16,4 +16,4 @@ jobs:
           strategy: regex
           root: VERSION
           tag_prefix: "v"
-          regex_pattern: "([0-9\.])"
+          regex_pattern: "([0-9.])"
