@@ -15,4 +15,5 @@ jobs:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
           strategy: regex
           root: VERSION
+          tag_prefix: "v"
           regex_pattern: "([0-9\.])"
